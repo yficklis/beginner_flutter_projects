@@ -47,6 +47,8 @@ class MyApp extends StatelessWidget {
   !isBeginner -> return false
   
 
+--------------------------------------------------------------------------
+
   C O N T R O L F L O W
 
   if (condition){
@@ -74,7 +76,7 @@ class MyApp extends StatelessWidget {
       
       break
     default:
-
+  }
     for loop
 
     imagine you have a box of 10 different colored crayons and you want to draw 
@@ -112,9 +114,35 @@ class MyApp extends StatelessWidget {
     break -> break out of loop
     continue -> skip this current iteration
 
-  }
+--------------------------------------------------------------------------
+
+  F U N C T I O N S / M E T H O D
+
+  We just looked at some cool blocks of code that gets things done!
+  We can organise these blocks of code into functions so that we can
+  reuse them easily.
+  
+  'void' means that the function returns nothing. Shortly we will look
+  at functions that do return something. This one for now just executes
+  the code in the function.
 
   */
+
+  // baisc function
+  void greet() {
+    print("Hello, Yficklis");
+  }
+
+  // function with parameters
+  void greetPerson(String name) {
+    print("Hello $name");
+  }
+
+  // function with return type
+  int add(int a, int b) {
+    int sum = a + b;
+    return sum;
+  }
 
   @override
   Widget build(BuildContext context) {
