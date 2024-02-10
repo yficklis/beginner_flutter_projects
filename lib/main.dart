@@ -144,6 +144,48 @@ class MyApp extends StatelessWidget {
     return sum;
   }
 
+  /* 
+  --------------------------------------------------------------------------
+
+  D A T A S T R U C T U R E S
+
+  */
+
+  // LIST: ordered collections of elements, can have duplicates;
+  List<int> numbers = [1, 2, 3];
+  List<String> names = ["Yficklis", "Santos", "Venancio", "Yficklis"];
+  // names[0] -> Yficklis
+  // names[1] -> Santos
+  // names[2] -> Venancio
+  // names[3] -> Yficklis
+
+  // SET: underordered collection of unique elements
+  Set<String> uniqueNames = {"Yficklis", "Sharon", "Vince"};
+
+  // MAP: stored as key-value pairs
+  Map user = {
+    'name': "Yficklis Santos",
+    'age': 25,
+    'height': 178,
+  };
+  // user['name'] -> Yficklis
+  // user['age'] -> 25
+  // user['height'] -> 178
+
+  // <type> defines the data type of the structure
+
+  void printNumbers() {
+    for (int i = 0; i < numbers.length; i++) {
+      print(numbers[i]);
+    }
+  }
+
+  void printNames() {
+    for (int i = 0; i < names.length; i++) {
+      print(names[i]);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
