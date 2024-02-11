@@ -15,6 +15,28 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.deepPurple[200],
+        appBar: AppBar(
+          title: Text(
+            "My App Bar",
+            style: TextStyle(color: Colors.white),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.deepPurple,
+          elevation: 0, // set the shadows of the nav bar
+          leading: Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
         body: Center(
           child: Container(
             height: 300,
