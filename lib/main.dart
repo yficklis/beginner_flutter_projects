@@ -15,26 +15,26 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
-          // set the alignment of the items by axis X (LEFT and RIGHT)
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // EXPANDED: fills the widget with the remaining space
           children: [
             // 1st Box
-            Container(
-              height: 300,
-              width: 300,
-              color: Colors.deepPurple,
+            Expanded(
+              child: Container(
+                color: Colors.deepPurple,
+              ),
             ),
             // 2nd box
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.deepPurple[400],
+            Expanded(
+              flex: 3,
+              child: Container(
+                color: Colors.deepPurple[400],
+              ),
             ),
             // 3rd box
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.deepPurple[200],
+            Expanded(
+              child: Container(
+                color: Colors.deepPurple[200],
+              ),
             ),
           ],
         ),
