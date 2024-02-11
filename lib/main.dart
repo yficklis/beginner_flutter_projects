@@ -14,22 +14,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
-          // EXPANDED: fills the widget with the remaining space
+        body: ListView(
+          scrollDirection: Axis.horizontal,
           children: [
             // 1st Box
             Container(
-              height: 500,
+              width: 500,
               color: Colors.deepPurple,
             ),
             // 2nd box
             Container(
-              height: 500,
+              width: 500,
               color: Colors.deepPurple[400],
             ),
             // 3rd box.. doesn't fit!
             Container(
-              height: 500,
+              width: 500,
               color: Colors.deepPurple[200],
             ),
           ],
