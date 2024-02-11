@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
+          // set the alignment of the items by axis Y (UP and DOWN)
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // 1st Box
             Container(
