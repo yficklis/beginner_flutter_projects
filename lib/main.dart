@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
-          // set the alignment of the items by axis Y (UP and DOWN)
-          mainAxisAlignment: MainAxisAlignment.center,
+          // set the alignment of the items by axis X (LEFT and RIGHT)
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // 1st Box
             Container(
-              height: 200,
-              width: 200,
+              height: 300,
+              width: 300,
               color: Colors.deepPurple,
             ),
             // 2nd box
@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
             ),
             // 3rd box
             Container(
-              height: 200,
-              width: 200,
+              height: 100,
+              width: 100,
               color: Colors.deepPurple[200],
             ),
           ],
