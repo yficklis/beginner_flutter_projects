@@ -18,23 +18,19 @@ class MyApp extends StatelessWidget {
           // EXPANDED: fills the widget with the remaining space
           children: [
             // 1st Box
-            Expanded(
-              child: Container(
-                color: Colors.deepPurple,
-              ),
+            Container(
+              height: 500,
+              color: Colors.deepPurple,
             ),
             // 2nd box
-            Expanded(
-              flex: 3,
-              child: Container(
-                color: Colors.deepPurple[400],
-              ),
+            Container(
+              height: 500,
+              color: Colors.deepPurple[400],
             ),
-            // 3rd box
-            Expanded(
-              child: Container(
-                color: Colors.deepPurple[200],
-              ),
+            // 3rd box.. doesn't fit!
+            Container(
+              height: 500,
+              color: Colors.deepPurple[200],
             ),
           ],
         ),
