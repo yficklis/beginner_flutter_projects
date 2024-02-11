@@ -16,30 +16,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Stack(
-          alignment: Alignment.center,
-          children: [
-            // big box
-            Container(
-              height: 300,
-              width: 300,
-              color: Colors.deepPurple,
-            ),
-
-            // medium box
-            Container(
+        body: Center(
+          child: GestureDetector(
+            onTap: () => {
+              // do something, when user tapped the container.
+              print("User tapped!");
+            },
+            child: Container(
               height: 200,
               width: 200,
               color: Colors.deepPurple[400],
+              child: Center(
+                child: Text("Tap me!"),
+              ),
             ),
-
-            // small box
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.deepPurple[200],
-            ),
-          ],
+          ),
         ),
       ),
     );
